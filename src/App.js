@@ -1,12 +1,12 @@
 import React from "react";
+import Navbar from "./components/navegation/navbar"
+ import Test from "./components/navegation/test"
 
 function App() {
-  return (
-    <div>
-     <h1>ESTO ES SABOR A CAMPO</h1>
-     <p>viva la berjena</p>
+  return <div className="App">
+     <Navbar />
+     <Test />
     </div>
-  );
 }
 
 export default App;
