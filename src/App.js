@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
-import Footer from "./components/Footer";
+import Footer from '../src/components/Footer'
+import '../src/components/Footer.css'
+
 
 
 
@@ -8,19 +9,14 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  return (
-    <div>
+  return <div>
      <h1>ESTO ES SABOR A CAMPO</h1>
      <p>viva la berjena</p>
     
 
-     <Footer/>
+     <Footer />
      
-    </div>
-
-    
-
-  );
+    </div>;
 }
 
 export default App;
