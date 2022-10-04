@@ -3,12 +3,13 @@ import Navbar from "./components/navegation/navbar";
 import Footer from "./components/Footer";
 import Imagen from "../components/img/Logo.jpeg";
 import _default from '@popperjs/core/lib/modifiers/eventListeners';
+import "./AboutUs.css"
 
 
-
-const AboutUs =()=>{
+function AboutUs (){
     return <div>
         <Navbar/>
+        <div className='contenedor'>
         <div className="container">
             <img src={Imagen} alt="" />
             <h1>NUESTRA HISTORIA</h1>
@@ -18,6 +19,7 @@ const AboutUs =()=>{
                 En el 2021 decidimos evolucionar inaugurando nuestro primer local en el centro de la ciudad de San Miguel de Tucumán.
 
                 Sabor a Campo elabora todos sus productos frescos de manera artesanal, sin conservantes ni aditivos y priorizando la alta calidad de materias primas</h4>
+        </div>
         </div>
         <Footer/>
     </div>
