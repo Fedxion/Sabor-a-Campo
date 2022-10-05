@@ -1,56 +1,23 @@
 import React from "react";
+import Navbar from "./navbar";
+import Footer from "../Footer";
+import Imagen from "../img/Logo.jpeg"
 
 function Test(){
-    return <div>
-    <h1>La cdlr</h1>
-    <footer>
-            <div className="main-footer">
-                <div className='container'>
-                    <div className='row'>
-                        
-                        <div className='col-md-3 col-sm-6'>
-                            <h4>Sabor a Campo</h4>
-                            <ul className='list-unstyled'>
-                                <li><img src="../img/campo.png.crdownload" alt="" /></li>
-                                <li>Tucumán, Argentina</li>
-                                <li>Monteagudo 345</li>
-                            </ul>
-                        </div>
+    return<div>
+        <div className='contenedor'>
+        <div className="container">
+            <img src={Imagen} alt="" />
+            <h1>NUESTRA HISTORIA</h1>
+            <h4>Sabor a Campo nace en el año 2020 en San Miguel de Tucumán a raíz de un deseo de realización personal y beneficio lucrativo.
+                Esta marca ofrece una amplia variedad de productos y servicios enfocados en la experiencia del consumidor, entre ellos: 15 variedades de escabeches y verduras, catering salado, delivery y take away boxes, así como diferentes opciones para eventos sociales y corporativos.
 
-                        <div className='col-md-3 col-sm-6'>
-                            <h4>This is my page</h4>
-                            <ul className='list-unstyled'>
-                                <li>33759440</li>
-                                <li>Monteagudo 345</li>
-                            </ul>
-                        </div>
+                En el 2021 decidimos evolucionar inaugurando nuestro primer local en el centro de la ciudad de San Miguel de Tucumán.
 
-                        <div className='col-md-3 col-sm-6'>
-                            <h4>This is my page</h4>
-                            <ul className='list-unstyled'>
-                                <li>33759440</li>
-                                <li>Tucumán, Argentina</li>
-                                <li>Monteagudo 345</li>
-                            </ul>
-                        </div>
-                   
+                Sabor a Campo elabora todos sus productos frescos de manera artesanal, sin conservantes ni aditivos y priorizando la alta calidad de materias primas</h4>
+        </div>
+        </div>
 
-
-                    </div>
-
-
-                    <div className='row'>
-                        <p className='col-sm'>
-                             &copy;{new Date().getFullYear()} Copyright
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-    
-    
-    
     
     
     </div>
