@@ -2,11 +2,12 @@ import React from "react";
 import Logo from "../../assets/logo.jpeg";
 import "./navbar.css"
 
+
 function Navbar(){
     return <div>
         <nav className="navbar navbar-expand-lg bg-black">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
     <img className= "navImg" src={Logo} /> </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -14,13 +15,13 @@ function Navbar(){
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item">
-          <a className="nav-link" href="#">Inicio</a>
+          <a className="nav-link" href="/">Inicio</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Quienes Somos</a>
+          <a className="nav-link" href="/AboutUs">Quienes Somos</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
+          <a className="nav-link" href="/Contact">Contacto</a>
         </li>
       </ul>
       <form className="d-flex" role="search">

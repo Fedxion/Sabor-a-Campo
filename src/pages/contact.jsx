@@ -2,8 +2,8 @@ import React from "react";
 import Logo from "../assets/logo.jpeg";
 import "./contact.css"
 
-function Contact(){
-    return <div className="flex-container">
+const Contact=()=>{
+    return (<div className="flex-container">
         <form className="form">
             <div className="form__section">
                <input  type="text" placeholder="Nombre" className="form__input" />
@@ -26,6 +26,7 @@ function Contact(){
             </div>
          </div> 
       </div>
+    );
     } 
 
 export default Contact;

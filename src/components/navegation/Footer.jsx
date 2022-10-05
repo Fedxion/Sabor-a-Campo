@@ -3,7 +3,7 @@ import "./Footer.css";
 import Logo from "../../assets/logo.jpeg";
 
 const Footer=()=>{
-    return <div>
+    return( <div>
     
     
     <footer className="pie">
@@ -20,13 +20,13 @@ const Footer=()=>{
                             <div className='box'>
                                 <h2>SABOR A CAMPO</h2>
                                <div className="link">
-                                    <a href="#">Inicio</a>
+                                    <a href="/">Inicio</a>
                                 </div>
                                 <div className="link">
-                                    <a href="#">Quiénes Somos</a>
+                                    <a href="/AboutUs">Quiénes Somos</a>
                                 </div>
                                 <div className="link">
-                                    <a href="#">Contacto</a>
+                                    <a href="/Contact">Contacto</a>
                                 </div>
                             </div>
             
@@ -58,6 +58,7 @@ const Footer=()=>{
     </footer>
      
    </div>
+    );
 }
 
 export default Footer;
