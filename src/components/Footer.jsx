@@ -35,10 +35,10 @@ const Footer=()=>{
                                 <h2>REDES SOCIALES</h2>
                                 
                                 <div className='red-social'>
-                                    <a className="icon" href="#"><i class="fab fa-facebook"></i></a>
-                                    <a className="icon" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a className="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                    <a className="icon" href="#"><i class="fab fa-youtube"></i></a>
+                                    <a className="icon" href="#"><i className="fab fa-facebook"></i></a>
+                                    <a className="icon" href="#"><i className="fab fa-twitter"></i></a>
+                                    <a className="icon" href="#"><i className="fab fa-instagram"></i></a>
+                                    <a className="icon" href="#"><i className="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                     
