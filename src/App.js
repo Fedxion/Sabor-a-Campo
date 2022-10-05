@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "./components/navegation/navbar";
-import Footer from "./components/Footer";
+import Footer from "../src/components/navegation/Footer";
 import { Login } from "./components/navegation/login";
 import { Register } from "./components/navegation/register";
 
-import Contact from "./components/pages/contact";
-import Test from "./components/navegation/test"
+import Contact from "./pages/contact";
+
 
 
 function App() {
