@@ -1,17 +1,18 @@
 import React from 'react';
 import Navbar from "./components/navegation/navbar";
 import Footer from "./components/Footer";
-import Imagen from "../components/img/Logo.jpeg";
 import _default from '@popperjs/core/lib/modifiers/eventListeners';
 import "./AboutUs.css"
 
 
 function AboutUs (){
-    return <div>
+    return 
+    <>
+    <div>
         <Navbar/>
         <div className='contenedor'>
         <div className="container">
-            <img src={Imagen} alt="" />
+            
             <h1>NUESTRA HISTORIA</h1>
             <h4>Sabor a Campo nace en el año 2020 en San Miguel de Tucumán a raíz de un deseo de realización personal y beneficio lucrativo.
                 Esta marca ofrece una amplia variedad de productos y servicios enfocados en la experiencia del consumidor, entre ellos: 15 variedades de escabeches y verduras, catering salado, delivery y take away boxes, así como diferentes opciones para eventos sociales y corporativos.
@@ -23,7 +24,7 @@ function AboutUs (){
         </div>
         <Footer/>
     </div>
-
+    </>
 }
 
 export default AboutUs;
