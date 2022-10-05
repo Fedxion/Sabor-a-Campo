@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import { Login } from "./components/navegation/login";
 import { Register } from "./components/navegation/register";
 
+import Contact from "./components/pages/contact";
+import Test from "./components/navegation/test"
 
 
 function App() {
