@@ -23,7 +23,7 @@ const Footer=()=>{
                                     <a href="#">Inicio</a>
                                 </div>
                                 <div className="link">
-                                    <a href="#">Quienes Somos</a>
+                                    <a href="#">Quiénes Somos</a>
                                 </div>
                                 <div className="link">
                                     <a href="#">Contacto</a>
