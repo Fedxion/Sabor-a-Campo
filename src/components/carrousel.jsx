@@ -1,10 +1,10 @@
 import { defaultModifiers } from "@popperjs/core/lib/popper";
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
-// import Logo from "../assets/logo.jpeg";
+import Logo from "../assets/logo.jpeg";
 // import {Container, Col, Row } from 'react-bootstrap/Carousel';
 
-import Carousel from "react-bootstrap/Carousel";
+
 
 function Carrousel() {
   return (
