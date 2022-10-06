@@ -1,9 +1,24 @@
 import React from "react";
+// import Logo from "../assets/logo.jpeg"
+// import Conserva from "../assets/conserva.jpg"
 
 const HomePage=()=>{
     return (
         <div>
-            <h1>Aqui van las card o Carrusel</h1>
+           {/* <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={Logo} class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <img src={Conserva} class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <img src={Logo} class="d-block w-100" alt="..." />
+    </div>
+  </div>
+</div> */}
+    <h1>Aqui va el carousel o cards, chau</h1>
         </div>
     )
 }
