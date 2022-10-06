@@ -27,7 +27,7 @@ const Footer=()=>{
                                     <Link to="/src/components/pages/homePage.jsx">Inicio</Link>
                                 </div>
                                 <div className="link">
-                                    <Link to="/src/components/pages/AboutUs.jsx">Quienes Somos</Link>
+                                    <Link to=<AboutUs>Quienes Somos</Link>
                                 </div>
                                 <div className="link">
                                     <Link to={Contact}>Contacto</Link>

@@ -1,3 +1,4 @@
+import React  from "react";
 import Navbar from "../components/navegation/navbar"
 import Footer from "../components/navegation/Footer"
 
