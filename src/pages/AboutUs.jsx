@@ -1,15 +1,12 @@
 import React from 'react';
-import Navbar from "./components/navegation/navbar";
-import Footer from "./components/Footer";
 import _default from '@popperjs/core/lib/modifiers/eventListeners';
 import "./AboutUs.css"
 
 
 function AboutUs (){
-    return 
+    return (
     <>
     <div>
-        <Navbar/>
         <div className='contenedor'>
         <div className="container">
             
@@ -22,9 +19,10 @@ function AboutUs (){
                 Sabor a Campo elabora todos sus productos frescos de manera artesanal, sin conservantes ni aditivos y priorizando la alta calidad de materias primas</h4>
         </div>
         </div>
-        <Footer/>
+        
     </div>
     </>
+    )
 }
 
 export default AboutUs;

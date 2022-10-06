@@ -22,7 +22,7 @@ function Contact(){
         </form>
         <div className="form__img">
             <div className="img-container">
-                <img src={Logo} />
+                <img src={Logo} alt="Sabor a Campo" />
             </div>
          </div> 
       </div>

@@ -1,11 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/logo.jpeg";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import AboutUs from "../../pages/AboutUs";
+import Contact from "../../pages/contact";
+import Home from "../../pages/homePage";
 
 const Footer=()=>{
-    return <div>
-    
-    
+    return (
+        <Router>
+    <div>
     <footer className="pie">
             <div className="grupo1">
                                         
@@ -20,13 +24,13 @@ const Footer=()=>{
                             <div className='box'>
                                 <h2>SABOR A CAMPO</h2>
                                <div className="link">
-                                    <a href="#">Inicio</a>
+                                    <a><Link to="/">Inicio</Link></a>
                                 </div>
                                 <div className="link">
-                                    <a href="#">Quiénes Somos</a>
+                                    <a><Link to="/AboutUs">Quienes Somos</Link></a>
                                 </div>
                                 <div className="link">
-                                    <a href="#">Contacto</a>
+                                    <a><Link to="/Contact">Contactos</Link></a>
                                 </div>
                             </div>
             
@@ -56,8 +60,15 @@ const Footer=()=>{
                 
             
     </footer>
+    <Routes>
+        <Route exact path='/' element={<Home />}/>
+        <Route path='/AboutUs' element={<AboutUs />}/>
+        <Route path="/Contact" element={<Contact />}/>
+    </Routes>
      
    </div>
+   </Router>
+   )
 }
 
 export default Footer;

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "../navegation/login.css"
 
-export const Login =(props) => {
+const Login =(props) => {
+
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
+
     }
     return ( 
         <div className="container">
@@ -26,3 +28,5 @@ export const Login =(props) => {
         </div>
     )
 }
+
+export default Login;
