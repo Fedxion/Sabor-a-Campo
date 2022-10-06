@@ -1,6 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/logo.jpeg";
+import {Link} from "react-router-dom";
+import HomePage from "../pages/homePage.jsx";
+import Contact from "../pages/contact.jsx";
+import AboutUs from "../pages/AboutUs.jsx";
 
 const Footer=()=>{
     return( <div>
@@ -20,13 +24,13 @@ const Footer=()=>{
                             <div className='box'>
                                 <h2>SABOR A CAMPO</h2>
                                <div className="link">
-                                    <a href="/">Inicio</a>
+                                    <Link to="/src/components/pages/homePage.jsx">Inicio</Link>
                                 </div>
                                 <div className="link">
-                                    <a href="/AboutUs">Quiénes Somos</a>
+                                    <Link to="/src/components/pages/AboutUs.jsx">Quienes Somos</Link>
                                 </div>
                                 <div className="link">
-                                    <a href="/Contact">Contacto</a>
+                                    <Link to={Contact}>Contacto</Link>
                                 </div>
                             </div>
             
