@@ -54,6 +54,9 @@ ul{
     text-decoration: none;
     color: #fff;
 }
+.link a:hover{
+    color: gray;
+}
 
 .pie .grupo1 .red-social a{
     display: inline-block;
