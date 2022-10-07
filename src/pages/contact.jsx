@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.jpeg";
+
 import "./contact.css"
 
 function Contact(){
@@ -20,11 +20,7 @@ function Contact(){
             
             <button className="btn btn-outline-success form_buttom" type="submit">Enviar</button>
         </form>
-        <div className="form__img">
-            <div className="img-container">
-                <img src={Logo} alt="Sabor a Campo" />
-            </div>
-         </div> 
+        
       </div>
     } 
 
