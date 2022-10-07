@@ -101,11 +101,10 @@ color: rgb(250, 250, 250);
     }
 }
 
-img {
+#logo{
     width: 200px;
     border-radius: 30%;
     margin: 5%;
-
     
 }
 
