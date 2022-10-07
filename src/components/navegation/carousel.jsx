@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../assets/logo.jpeg";
-import Conserva from "../assets/conserva.jpg";
+import Logo from "../../assets/logo.jpeg";
+import Conserva from "../../assets/conserva.jpg";
 
 const Carousel=()=>{
     return (
