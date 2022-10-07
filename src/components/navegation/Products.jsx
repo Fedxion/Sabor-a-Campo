@@ -6,67 +6,60 @@ import Imgc from "../../assets/Pickles.jpeg";
 import Imgd from "../../assets/Porotos.jpeg";
 import Imge from "../../assets/Pollo.jpeg";
 
-const Products = () => {
-    return( 
-    <>
-    
-        <div className="cont">
-            <div className="card">
-                <img src={Imga} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">Berenjenas</h5>
-                    <p className="card-text">Berenjenas al escabeche</p>
-                </div>
-                <div className="card-body">
+const Product= () =>{
+    return( <section>
+        <div class="contenedor-cards">
+    <div class="row row-cols-1 row-cols-md-3 g-3" id="tarjetas">
+      <div class="col">
+        <div class="card">
+          <img src={Imga} class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">Berenjenas</h5>
+            <p class="card-text">Berenjenas en escabeche</p>
+            </div>
+            <div className="card-linkk">
                     <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Another link</a>
-                </div>
+                    <a href="#" className="card-link">Tienda</a>
             </div>
-        </div><>
-            <><div className="cont">
-                <div className="card">
-                    <img src={Imga} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Berenjenas</h5>
-                        <p className="card-text">Berenjenas al escabeche</p>
-                    </div>
-                    <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
-                    </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src={Imgc} class="card-img-top" id="burguer" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Pickles</h5>
+            <p class="card-text">Pickles mixtos</p>
+          </div>
+          <div className="card-linkk">
+                    <a href="#" className="card-link">Card link</a>
+                    <a href="#" className="card-link">Tienda</a>
                 </div>
-            </div>
-        <div className="cont">
-            <div>
-                <div className="card">
-                    <img src={Imga} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Berenjenas</h5>
-                        <p className="card-text">Berenjenas al escabeche</p>
-                    </div>
-                    <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
-                    </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src={Imgd} class="card-img-top" id="burguer" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Porotos</h5>
+            <p class="card-text">Porotos en aceite y agua</p>
+          </div>
+          <div className="card-linkk">
+                    <a href="#" className="card-link">Card link</a>
+                    <a href="#" className="card-link">Tienda</a>
                 </div>
-            </div>
-        </div></>
-            <div className="cont">  
-                <div className="card">
-                    <img src={Imga} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Berenjenas</h5>
-                        <p className="card-text">Berenjenas al escabeche</p>
-                    </div>
-                    <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
-                    </div>
-                </div> 
-            </div></>
-            
-</>
-);
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    );
 }
 
-export default Products
+export default Product;
