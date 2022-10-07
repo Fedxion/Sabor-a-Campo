@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/logo.jpeg";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AboutUs from "../../pages/AboutUs";
 import Contact from "../../pages/contact";
 import Home from "../../pages/homePage";
@@ -60,11 +60,11 @@ const Footer=()=>{
                 
             
     </footer>
-    <Routes>
+    <Switch>
         <Route exact path='/' element={<Home />}/>
         <Route path='/AboutUs' element={<AboutUs />}/>
         <Route path="/Contact" element={<Contact />}/>
-    </Routes>
+    </Switch>
      
    </div>
    </Router>
