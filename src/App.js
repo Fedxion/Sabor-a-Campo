@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/navegation/navbar";
 import Footer from "../src/components/navegation/Footer";
+import Carousel from "./components/navegation/carousel";
 
 
 
@@ -11,6 +12,7 @@ import Footer from "../src/components/navegation/Footer";
 function App() {
   return <div className="App">
      <Navbar />
+     <Carousel />
      <Footer />
     </div>
 }
