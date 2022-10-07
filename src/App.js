@@ -6,8 +6,6 @@ import Footer from "../src/components/navegation/Footer";
 
 
 
-
-
 function App() {
   return <div className="App">
      <Navbar />
