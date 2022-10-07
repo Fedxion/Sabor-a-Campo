@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets/logo.jpeg"
-import Conserva from "../assets/conserva.jpg"
+import Logo from "../assets/logo.jpeg";
+import Conserva from "../assets/conserva.jpg";
 
-const HomePage=()=>{
+const Carousel=()=>{
     return (
         <div>
            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -22,4 +22,4 @@ const HomePage=()=>{
     )
 }
 
-export default HomePage;
+export default Carousel;
