@@ -9,9 +9,9 @@ import LoginRegister from "./LoginRegister";
 
 
 function Navbar(){
-    return (
-      
-    <div>
+    return (<div>
+      <Router>
+    
         <nav className="navbar navbar-expand-lg bg-black">
   <div className="container-fluid">
     <Link to="/" className="navbar-brand" href="#" >
@@ -37,7 +37,12 @@ function Navbar(){
     </div>
   </div>
 </nav>
-
+          <Routes>
+                <Route exact path="/AboutUs" component={AboutUs}/>
+                <Route exact path="/Contact" component={Contact}/>
+                <Route exact path="/" component={Home}/>
+            </Routes>
+            </Router>
     </div>
  
     )

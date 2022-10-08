@@ -1,7 +1,7 @@
 import React from 'react';
 import _default from '@popperjs/core/lib/modifiers/eventListeners';
 import "./AboutUs.css"
-import Imagen from "../assets/Pickles.jpg";
+import Imagen from "../assets/1.png";
 
 const AboutUs= ()=>{
     return (<div>
