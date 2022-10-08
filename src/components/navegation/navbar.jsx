@@ -38,9 +38,9 @@ function Navbar(){
   </div>
 </nav>
           <Routes>
-                <Route exact path="/AboutUs" component={AboutUs}/>
-                <Route exact path="/Contact" component={Contact}/>
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/AboutUs" element={<AboutUs />}/>
+                <Route exact path="/Contact" element={<Contact />}/>
+                <Route exact path="/" element={<Home />}/>
             </Routes>
             </Router>
     </div>
