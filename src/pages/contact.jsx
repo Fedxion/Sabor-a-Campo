@@ -4,7 +4,11 @@ import "./contact.css"
 
 function Contact(){
     return <div className="flex-container">
+      
+      
+      
         <form className="form">
+        <h1 className="title">CONTÁCTANOS</h1>
             <div className="form__section">
                <input  type="text" placeholder="Nombre" className="form__input" />
             </div>
