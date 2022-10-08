@@ -37,13 +37,7 @@ function Navbar(){
     </div>
   </div>
 </nav>
-{/* <Routes>
-    <Route exact path='/' element={<Home />}/>
-    <Route path='/AboutUs' element={<AboutUs />}/>
-    <Route path="/Contact" element={<Contact />}/>
-    <Route path="/Login" element={<LoginRegister />}/>
-    
-</Routes> */}
+
     </div>
  
     )
