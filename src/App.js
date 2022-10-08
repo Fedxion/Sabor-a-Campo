@@ -17,13 +17,6 @@ function App() {
       <Navbar />
       <Gallery />
       <Products /> 
-
-   
-
-     
-
-     
-     
      <Footer />
     </div>
   );
