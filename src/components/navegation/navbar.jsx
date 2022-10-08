@@ -10,25 +10,25 @@ import LoginRegister from "./LoginRegister";
 
 function Navbar(){
     return (
-      <Router>
+      
     <div>
         <nav className="navbar navbar-expand-lg bg-black">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
-    <img className= "navImg" src={Logo} /> </a>
+    <Link to="/" className="navbar-brand" href="#" >
+    <img className= "navImg" src={Logo} /> </Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item">
-          <a className="nav-link" ><Link to="/">Inicio</Link></a> 
+          <Link to="/" className="nav-link" >Inicio</Link> 
         </li>
         <li className="nav-item">
-          <a className="nav-link"><Link to="/AboutUs">Quienes Somos</Link></a>
+          <Link to="/ABoutUs" className="nav-link">Quienes Somos</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link"><Link to="/Contact">Contactos</Link></a> 
+          <Link to="/Contact" className="nav-link">Contactos</Link>
         </li>
       </ul>
       <form className="d-flex" role="search">
@@ -37,15 +37,15 @@ function Navbar(){
     </div>
   </div>
 </nav>
-<Routes>
+{/* <Routes>
     <Route exact path='/' element={<Home />}/>
     <Route path='/AboutUs' element={<AboutUs />}/>
     <Route path="/Contact" element={<Contact />}/>
     <Route path="/Login" element={<LoginRegister />}/>
     
-</Routes>
+</Routes> */}
     </div>
-    </Router>
+ 
     )
 }
 
