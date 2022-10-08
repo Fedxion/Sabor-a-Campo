@@ -7,6 +7,8 @@ const HomePage=()=>{
         <Navbar/>
         <Footer/>
     </div>
+
+
     );
 }
 

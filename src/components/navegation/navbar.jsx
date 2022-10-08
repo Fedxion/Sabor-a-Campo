@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.jpeg";
 import "./navbar.css"
+import AppRouter from "../../routes/appRouter";
 
 
 function Navbar(){
@@ -32,6 +33,8 @@ function Navbar(){
   </div>
 </nav>
     </div>
+
+
 }
 
 export default Navbar;

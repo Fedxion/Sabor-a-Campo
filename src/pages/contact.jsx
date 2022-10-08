@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/logo.jpeg";
 import "./contact.css"
 
+
 const Contact=()=>{
     return (<div className="flex-container">
         <form className="form">
@@ -26,6 +27,8 @@ const Contact=()=>{
             </div>
          </div> 
       </div>
+
+
     );
     } 
 
