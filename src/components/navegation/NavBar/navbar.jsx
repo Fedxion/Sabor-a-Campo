@@ -20,13 +20,13 @@ function Navbar(){
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link to="/">Inicio</Link>
+          <div className=""><Link to="/">Inicio</Link></div>
         </li>
         <li className="nav-item">
-          <Link to="/AboutUs">Quiénes Somos</Link>
+          <div className=""><Link to="/aboutus">Quiénes Somos</Link></div>
         </li>
         <li className="nav-item">
-          <Link to="/Contact">Contactos</Link>
+          <div className=""><Link to="/Contact">Contactos</Link></div>
         </li>
       </ul>
       <form className="d-flex" role="search">
