@@ -1,10 +1,10 @@
 import React from "react";
 import "./Products.css";
-import Imga from "../../assets/Berenjena.jpeg";
-import Imgb from "../../assets/Conejo.jpeg";
-import Imgc from "../../assets/Pickles.jpeg";
-import Imgd from "../../assets/Porotos.jpeg";
-import Imge from "../../assets/Pollo.jpeg";
+import Imga from "../../../assets/Berenjena.jpeg";
+import Imgb from "../../../assets/Conejo.jpeg";
+import Imgc from "../../../assets/Pickles.jpeg";
+import Imgd from "../../../assets/Porotos.jpeg";
+import Imge from "../../../assets/Pollo.jpeg";
 
 const Product= () =>{
     return( <section>

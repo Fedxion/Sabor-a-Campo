@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../../assets/logo.jpeg";
+import Logo from "../../../assets/logo.jpeg";
 import "./navbar.css"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutUs from "../../pages/AboutUs";
-import Contact from "../../pages/contact";
-import Home from "../../pages/homePage";
-import LoginRegister from "./LoginRegister";
+import AboutUs from "../../../pages/AboutUs";
+import Contact from "../../../pages/contact";
+import Home from "../../../pages/homePage";
+import LoginRegister from "../Login&Register/LoginRegister";
 
 
 function Navbar(){

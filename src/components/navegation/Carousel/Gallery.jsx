@@ -1,9 +1,9 @@
 import React from "react";
-import Img1 from "../../assets/1.png";
-import Img2 from "../../assets/2.png";
-import Img3 from "../../assets/3.png";
-import Img4 from "../../assets/4.png";
-import Img5 from "../../assets/5.png";
+import Img1 from "../../../assets/1.png";
+import Img2 from "../../../assets/2.png";
+import Img3 from "../../../assets/3.png";
+import Img4 from "../../../assets/4.png";
+import Img5 from "../../../assets/5.png";
 
 const Gallery = () => {
     return(

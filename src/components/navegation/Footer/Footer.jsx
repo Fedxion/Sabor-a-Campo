@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/logo.jpeg";
+import Logo from "../../../assets/logo.jpeg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutUs from "../../pages/AboutUs";
-import Contact from "../../pages/contact";
-import Home from "../../pages/homePage";
+import AboutUs from "../../../pages/AboutUs";
+import Contact from "../../../pages/contact";
+import Home from "../../../pages/homePage";
 
 const Footer=()=>{
     return (
