@@ -19,7 +19,7 @@ const Product= () =>{
             </div>
             <div className="card-linkk">
                     
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Tienda</a>
             </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Product= () =>{
           </div>
           <div className="card-linkk">
                     
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ const Product= () =>{
           </div>
           <div className="card-linkk">
                     
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>
       </div>

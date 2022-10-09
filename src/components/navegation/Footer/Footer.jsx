@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../../assets/logo.jpeg";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Footer=()=>{
@@ -37,10 +37,10 @@ const Footer=()=>{
                                 <h2>REDES SOCIALES</h2>
                                 
                                 <div className='red-social'>
-                                    <a className="icon" href="#"><i className="fab fa-facebook"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-instagram"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-youtube"></i></a>
+                                    <a className="icon" href="www.facebook.com"><i className="fab fa-facebook"></i></a>
+                                    <a className="icon" href="www.twitter.com"><i className="fab fa-twitter"></i></a>
+                                    <a className="icon" href="www.instagram.com"><i className="fab fa-instagram"></i></a>
+                                    <a className="icon" href="wwww.youtube.com"><i className="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                     

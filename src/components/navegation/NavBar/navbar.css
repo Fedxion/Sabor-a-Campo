@@ -12,6 +12,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 a:hover {
     color: gray;
 }
@@ -20,6 +21,8 @@ a:hover {
     color: white;
 }
 
-
+.navbar-brand{
+    font-size: 0px;
+}
 
 
