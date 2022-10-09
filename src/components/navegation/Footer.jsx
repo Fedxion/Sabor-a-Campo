@@ -1,14 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/logo.jpeg";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutUs from "../../pages/AboutUs";
-import Contact from "../../pages/contact";
-import Home from "../../pages/homePage";
+import { Link } from "react-router-dom"
 
 const Footer=()=>{
     return (
-        <Router>
     <div>
     <footer className="pie">
             <div className="grupo1">
@@ -24,13 +20,13 @@ const Footer=()=>{
                             <div className='box'>
                                 <h2>SABOR A CAMPO</h2>
                                <div className="link">
-                                    <a><Link to="/">Inicio</Link></a>
+                                    <Link to="/">Inicio</Link>
                                 </div>
                                 <div className="link">
-                                    <a><Link to="/AboutUs">Quienes Somos</Link></a>
+                                    <Link to="/AboutUs">Quienes Somos</Link>
                                 </div>
                                 <div className="link">
-                                    <a><Link to="/Contact">Contactos</Link></a>
+                                    <Link to="/Contact">Contactos</Link>
                                 </div>
                             </div>
             
@@ -39,10 +35,10 @@ const Footer=()=>{
                                 <h2>REDES SOCIALES</h2>
                                 
                                 <div className='red-social'>
-                                    <a className="icon" href="#"><i className="fab fa-facebook"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-twitter"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-instagram"></i></a>
-                                    <a className="icon" href="#"><i className="fab fa-youtube"></i></a>
+                                    <a className="icon" href="https://www.facebook.com"><i className="fab fa-facebook"></i></a>
+                                    <a className="icon" href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+                                    <a className="icon" href="https://www.instagram.com"><i className="fab fa-instagram"></i></a>
+                                    <a className="icon" href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
                                 </div>
                             </div>
                     
@@ -56,14 +52,8 @@ const Footer=()=>{
                              &copy;{new Date().getFullYear()} Copyright
                         </p>
                     </div>
-
-                
-            
     </footer>
-   
-     
    </div>
-   </Router>
    )
 }
 

@@ -1,20 +1,18 @@
-// import React from "react";
-// import {Routes, Route, BrowserRouter as Router }from "react-router-dom";
-// import About from "../../../pages/AboutUs";
-// import Contact from "../../../pages/contact";
-// import HomePage from "../../../pages/homePage";
+import React from "react";
+import { Routes, Route }from "react-router-dom";
+import About from "../../../pages/AboutUs";
+import Contact from "../../../pages/contact";
+import HomePage from "../../../pages/homePage";
+import LoginRegister from "../../../components/navegation/LoginRegister"
+export const AppRouter = () => {
+    return(
+            <Routes>
+                <Route exact path="/aboutus" element={<About />} />
+                <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/loginregister" element={<LoginRegister />} />
+                <Route exact path="/" element={<HomePage />} />
+            </Routes>
+    )
+}
 
-// export const AppRouter = () => {
-//     return(
-//         // <Router>
-//         //     {/* <Routes>
-//         //         <Route exact path="/AboutUs" component={About}/>
-//         //         <Route exact path="/Contact" component={Contact}/>
-//         //         <Route exact path="/" component={HomePage}/>
-//         //     </Routes> */}
-
-//         // </Router>
-//     )
-// }
-
-// export default AppRouter;
+export default AppRouter;

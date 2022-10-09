@@ -1,10 +1,10 @@
 import React from "react";
 import "./Products.css";
 import Imga from "../../assets/Berenjena.jpeg";
-import Imgb from "../../assets/Conejo.jpeg";
+// import Imgb from "../../assets/Conejo.jpeg";
 import Imgc from "../../assets/Pickles.jpeg";
 import Imgd from "../../assets/Porotos.jpeg";
-import Imge from "../../assets/Pollo.jpeg";
+// import Imge from "../../assets/Pollo.jpeg";
 
 const Product= () =>{
     return( <section>
@@ -18,8 +18,8 @@ const Product= () =>{
             <p class="card-text">Berenjenas en escabeche</p>
             </div>
             <div className="card-linkk">
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Card link</a>
+                    <a href="/" className="card-link">Tienda</a>
             </div>
         </div>
       </div>
@@ -32,8 +32,8 @@ const Product= () =>{
             <p class="card-text">Pickles mixtos</p>
           </div>
           <div className="card-linkk">
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Card link</a>
+                    <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>
       </div>
@@ -46,8 +46,8 @@ const Product= () =>{
             <p class="card-text">Porotos en aceite y agua</p>
           </div>
           <div className="card-linkk">
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Tienda</a>
+                    <a href="/" className="card-link">Card link</a>
+                    <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>
       </div>

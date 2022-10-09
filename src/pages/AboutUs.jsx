@@ -1,5 +1,5 @@
 import React from 'react';
-import _default from '@popperjs/core/lib/modifiers/eventListeners';
+// import _default from '@popperjs/core/lib/modifiers/eventListeners';
 import "./AboutUs.css"
 import Imagen from "../assets/conserva.jpg";
 
@@ -15,7 +15,7 @@ const AboutUs= ()=>{
             <h4>En el 2021 decidimos evolucionar inaugurando nuestro primer local en el centro de la ciudad de San Miguel de Tucumán.</h4>
 
             <h4>Sabor a Campo elabora todos sus productos frescos de manera artesanal, sin conservantes ni aditivos y priorizando la alta calidad de materias primas</h4>
-            <img className="img-conserva"src={Imagen}></img>
+            <img className="img-conserva" alt="Conserva" src={Imagen}></img>
         </div>
     </div>
     );   
