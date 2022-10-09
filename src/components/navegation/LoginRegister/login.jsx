@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../navegation/login.css"
+import "./login.css";
 
 const Login =(props) => {
 

@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: #060e16;
+    color: white;
+    text-align: center;
+    margin: 5%;
+    padding: 10%;
+    
+}
+
+h1{
+    display: block;
+    
+}
+
+img{
+    text-align: center;
+    
+}
+
+
+.img-conserva{
+    border-radius: 0%;
+    padding-top: 5%;
+    width: 96%;
+
+}

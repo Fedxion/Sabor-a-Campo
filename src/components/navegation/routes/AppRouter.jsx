@@ -1,20 +1,22 @@
-// import React from "react";
-// import {Routes, Route, BrowserRouter as Router }from "react-router-dom";
-// import About from "../../../pages/AboutUs";
-// import Contact from "../../../pages/contact";
-// import HomePage from "../../../pages/homePage";
+import React from "react";
+import {Routes, Route, BrowserRouter as Router }from "react-router-dom";
+import About from "../../../pages/AboutUs";
+import Contact from "../../../pages/contact";
+import HomePage from "../../../pages/homePage";
 
-// export const AppRouter = () => {
-//     return(
-//         // <Router>
-//         //     {/* <Routes>
-//         //         <Route exact path="/AboutUs" component={About}/>
-//         //         <Route exact path="/Contact" component={Contact}/>
-//         //         <Route exact path="/" component={HomePage}/>
-//         //     </Routes> */}
+const AppRouter = () => {
+    return(
+        <Router>
+            <Routes>
 
-//         // </Router>
-//     )
-// }
+                <Route exact path="/" component={HomePage}/>
+                <Route exact path="/aboutus" component={About}/>
+                <Route exact path="/contact" component={Contact}/>
+                
+            </Routes>
 
-// export default AppRouter;
+        </Router>
+    )
+}
+
+export default AppRouter;
