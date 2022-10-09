@@ -14,7 +14,7 @@ const Product= () =>{
         <div class="card">
           <img src={Imga} class="card-img-top" alt="..." />
         <div class="card-body">
-            <h5 class="card-title">Berenjenas</h5>
+            <h5 class="card-title"><b>Berenjenas</b></h5>
             <p class="card-text">Berenjenas en escabeche</p>
             </div>
             <div className="card-linkk">
@@ -28,7 +28,7 @@ const Product= () =>{
         <div class="card">
           <img src={Imgc} class="card-img-top" id="burguer" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Pickles</h5>
+            <h5 class="card-title"><b>Pickles</b></h5>
             <p class="card-text">Pickles mixtos</p>
           </div>
           <div className="card-linkk">
@@ -42,7 +42,7 @@ const Product= () =>{
         <div class="card">
           <img src={Imgd} class="card-img-top" id="burguer" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Porotos</h5>
+            <h5 class="card-title"><b>Porotos</b></h5>
             <p class="card-text">Porotos en aceite y agua</p>
           </div>
           <div className="card-linkk">

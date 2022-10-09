@@ -64,3 +64,9 @@ body{
  }
 
  .form__input::placeholder {color: rgb(238, 243, 243);}
+
+ .title{
+    text-align: center;
+    color: #fff;
+
+ }
