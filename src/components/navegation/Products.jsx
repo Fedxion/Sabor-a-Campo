@@ -18,7 +18,7 @@ const Product= () =>{
             <p class="card-text">Berenjenas en escabeche</p>
             </div>
             <div className="card-linkk">
-                    <a href="/" className="card-link">Card link</a>
+                    
                     <a href="/" className="card-link">Tienda</a>
             </div>
         </div>
@@ -32,7 +32,7 @@ const Product= () =>{
             <p class="card-text">Pickles mixtos</p>
           </div>
           <div className="card-linkk">
-                    <a href="/" className="card-link">Card link</a>
+                    
                     <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>
@@ -46,7 +46,7 @@ const Product= () =>{
             <p class="card-text">Porotos en aceite y agua</p>
           </div>
           <div className="card-linkk">
-                    <a href="/" className="card-link">Card link</a>
+                    
                     <a href="/" className="card-link">Tienda</a>
                 </div>
         </div>

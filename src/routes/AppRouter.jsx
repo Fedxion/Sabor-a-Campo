@@ -1,10 +1,12 @@
 import React from "react";
 import { Routes, Route }from "react-router-dom";
-import About from "../../../pages/AboutUs";
-import Contact from "../../../pages/contact";
-import HomePage from "../../../pages/homePage";
-import LoginRegister from "../../../components/navegation/LoginRegister"
-export const AppRouter = () => {
+import About from "../pages/AboutUs";
+import Contact from "../pages/contact";
+import HomePage from "../pages/homePage";
+import LoginRegister from "../components/navegation/LoginRegister"
+
+
+const AppRouter = () => {
     return(
             <Routes>
                 <Route exact path="/aboutus" element={<About />} />

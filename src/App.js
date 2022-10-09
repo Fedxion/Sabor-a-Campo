@@ -3,7 +3,7 @@ import Navbar from "./components/navegation/navbar";
 import Footer from "../src/components/navegation/Footer";
   // import Gallery from "./components/navegation/Gallery";
   // import Products from "./components/navegation/Products";
-import AppRouter from "./components/navegation/routes/AppRouter";
+import AppRouter from "./routes/AppRouter";
 // import {Router} from "react-router-dom";
 // import { BrowserRouter } from "react-router-dom";
 
