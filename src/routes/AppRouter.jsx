@@ -9,9 +9,9 @@ export const AppRouter = () => {
         <Router>
             <Routes>
 
-                <Route exact path="/" component={HomePage}/>
-                <Route exact path="/AboutUs" component={About}/>
-                <Route exact path="/Contact" component={Contact}/>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/AboutUs" component={About} />
+                <Route exact path="/Contact" component={Contact} />
                 
             </Routes>
 

@@ -1,16 +1,13 @@
 import React from "react";
 import Logo from "../../../assets/logo.jpeg";
 import "./navbar.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutUs from "../../../pages/AboutUs";
-import Contact from "../../../pages/contact";
-import Home from "../../../pages/homePage";
-import LoginRegister from "../Login&Register/LoginRegister";
+import { Link } from "react-router-dom";
+
 
 
 function Navbar(){
     return (
-      <Router>
+     
     <div>
         <nav className="navbar navbar-expand-lg bg-black">
   <div className="container-fluid">
@@ -25,7 +22,7 @@ function Navbar(){
           <a className="nav-link" ><Link to="/">Inicio</Link></a> 
         </li>
         <li className="nav-item">
-          <a className="nav-link"><Link to="/AboutUs">Quienes Somos</Link></a>
+          <a className="nav-link"><Link to="/AboutUs">Quiénes Somos</Link></a>
         </li>
         <li className="nav-item">
           <a className="nav-link"><Link to="/Contact">Contactos</Link></a> 
@@ -37,16 +34,9 @@ function Navbar(){
     </div>
   </div>
 </nav>
-<Routes>
-    
-    <Route path='/AboutUs' element={<AboutUs />}/>
-    <Route path="/Contact" element={<Contact />}/>
-    <Route path="/Login" element={<LoginRegister />}/>
-    <Route exact path='/' element={<Home />}/>
-    
-</Routes>
+
     </div>
-    </Router>
+   
     )
 }
 

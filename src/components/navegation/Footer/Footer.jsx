@@ -1,14 +1,12 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../../assets/logo.jpeg";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutUs from "../../../pages/AboutUs";
-import Contact from "../../../pages/contact";
-import Home from "../../../pages/homePage";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 
 const Footer=()=>{
     return (
-        <Router>
+       
     <div>
     <footer className="pie">
             <div className="grupo1">
@@ -24,13 +22,13 @@ const Footer=()=>{
                             <div className='box'>
                                 <h2>SABOR A CAMPO</h2>
                                <div className="link">
-                                    <a><Link to="/">Inicio</Link></a>
+                                    <Link to="/">Inicio</Link>
                                 </div>
                                 <div className="link">
-                                    <a><Link to="/AboutUs">Quienes Somos</Link></a>
+                                    <Link to="/AboutUs">Quienes Somos</Link>
                                 </div>
                                 <div className="link">
-                                    <a><Link to="/Contact">Contactos</Link></a>
+                                    <Link to="/Contact">Contactos</Link>
                                 </div>
                             </div>
             
@@ -63,7 +61,7 @@ const Footer=()=>{
    
      
    </div>
-   </Router>
+ 
    )
 }
 

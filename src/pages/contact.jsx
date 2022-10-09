@@ -1,30 +1,17 @@
 import React from "react";
+import ContactBody from "../components/navegation/Contact/ContactBody";
+import Footer from "../components/navegation/Footer/Footer";
+import Navbar from "../components/navegation/NavBar/navbar";
 
-import "./contact.css"
+
 
 function Contact(){
-    return <div className="flex-container">
+    return <div >
       
+      <Navbar />
+      <ContactBody />
+      <Footer />
       
-      
-        <form className="form">
-        <h1 className="title">CONTÁCTANOS</h1>
-            <div className="form__section">
-               <input  type="text" placeholder="Nombre" className="form__input" />
-            </div>
-            <div className="form__section">
-               <input type="email" placeholder="Direccion de correo electronico" class="form__input" />
-            </div>
-            <div className="form__section">
-               <input type="text" placeholder="Telefono" className="form__input" />
-            </div>
-            <div>
-               <textarea placeholder="Mensaje" className="form__input"></textarea>
-            </div>
-            
-            <button className="btn btn-outline-success form_buttom" type="submit">Enviar</button>
-        </form>
-        
       </div>
     } 
 
