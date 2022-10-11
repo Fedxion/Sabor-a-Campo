@@ -7,7 +7,10 @@ router.get("/login", LoginController.findAll);
 
 router.get("/login/:email", LoginController.findOne);
 
-router.post("/login", LoginController.save);
+router.post("/login", function(req, res){
+    LoginController.save
+});
+
 
 router.put("/login/:email", LoginController.update);
 
