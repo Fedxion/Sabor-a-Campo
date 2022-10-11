@@ -1,10 +1,10 @@
 const User = require("../model/User");
 
-module.exports = class LoginService {
+module.exports = class LoginService {                      //ESTA BIEN?????????????????
     static async findOne(req, res) {
-        const { username, password } = req.body;
+        const { nombre, contraseña } = req.body;
         try {
-          const user = await User.findOne({ username }).select("-_id").select("-__v");
+          const user = await User.findOne({ email }).select("-_email").select("-__v");
           if(user){
             if(user.password === password){
                 res.json({ data: "logged" });

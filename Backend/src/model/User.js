@@ -3,10 +3,6 @@ const Schema = mongoose.Schema;
 
 
 const userSchema = new Schema({
-    dni:{
-        type: Number,
-        required: true
-    },
     nombre:{
         type: String,
         required: true
@@ -23,5 +19,7 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-},{collection:'user'});
+},{collection:'user'},
+  {timestamps: true});
+
 module.exports = mongoose.model("User", userSchema);

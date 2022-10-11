@@ -1,4 +1,4 @@
-const User = require("../model/Student");
+const User = require("../model/User");
 // const winston = require('winston');
 
 // const consoleTransport = new winston.transports.Console()
@@ -24,12 +24,11 @@ module.exports = class UserService {
 //    */
 
   static async save(req, res) {
-    const { dni, nombre, apellido, email, contraseña } = req.body;
+    const { nombre, apellido, email, contraseña } = req.body;
     try {
-      const response = await exists(dni);
+      const response = await exists(nombre);
       if (!response.exists) {
         await User.create({
-          dni,
           nombre,
           apellido,
           email,
@@ -56,15 +55,14 @@ module.exports = class UserService {
    * @param {*HttpResponse} res 
    */
   static async update(req, res) {
-    const { nombre, apellido, email, contraseña } = req.body;
-    const dni = req.params.dni;
+    const { nombre, apellido, contraseña } = req.body;  // ELIMINAR EMAIL ESTA BIEN?
+    const email = req.params.email;
     try {
       await User.updateOne(
-        { dni : `${dni}` },
+        { email : `${email}` },
         {
           nombre,
           apellido,
-          email,
           contraseña,
         }
       );
@@ -86,10 +84,10 @@ module.exports = class UserService {
    * @param {*HttpResponse} res 
    */
   static async delete(req, res) {
-    const dni = req.params.dni;
+    const email = req.params.email;
     try {
       const deleted = await User.deleteOne(
-        { dni : `${dni}` },
+        { email : `${email}` },
       );
       if(deleted.deletedCount > 0){
       res.json({ message: "student deleted successfully" });
@@ -115,9 +113,9 @@ module.exports = class UserService {
   static async findAll(req, res) {
     try {
       logger.info("buscando")
-      const User= await User.find({}).select("-_dni").select("-__v"); 
+      const User= await User.find({}).select("-_email").select("-__v");  //ESTA BIEN ASI?
       res.setHeader("content-type", "application/json");
-      res.json({ usuario: usuario });
+      res.json({ data : data });
       logger.info(User);
       res.status(200);
     } catch (error) {
@@ -135,10 +133,10 @@ module.exports = class UserService {
    * @param {*HttpResponse} res 
    */
   static async findOne(req, res) {
-    const dni = req.params.dni;
+    const email = req.params.email;
     try {
-      const student = await User.find({ identification }).select("-_dni").select("-__v");
-      res.json({ data: usuario });
+      const user = await User.find({ email }).select("-_email").select("-__v");
+      res.json({ data: data });
       res.status(200);
     } catch (error) {
       res.status(400);
@@ -152,9 +150,9 @@ module.exports = class UserService {
  * @param {*identificación del estudiante } identification 
  * @returns boolean devuelve true si el estudiante existe caso contrario false
  */
-const exists = async (dni) => {
+const exists = async (email) => {
   try {
-    const result = await User.findOne({ dni });
+    const result = await User.findOne({ email });
     if(!result)
       return { exists : false };
     else
