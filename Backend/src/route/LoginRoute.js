@@ -1,19 +1,19 @@
-const {Router} = require('express');
-const router = Router();
-const LoginController = require("../controller/LoginController");
+// const {Router} = require('express');
+// const router = Router();
+// const LoginController = require("../controller/LoginController");
 
 
-router.get("/login", LoginController.findAll);
+// router.get("/login", LoginController.findAll);
 
-router.get("/login/:email", LoginController.findOne);
+// router.get("/login/:email", LoginController.findOne);
 
-router.post("/login", function(req, res){
-    LoginController.save
-});
+// router.post("/login", function(req, res){
+//     LoginController.save
+// });
 
 
-router.put("/login/:email", LoginController.update);
+// router.put("/login/:email", LoginController.update);
 
-router.delete("/login/:email", LoginController.delete);
+// router.delete("/login/:email", LoginController.delete);
 
-module.exports = router;
+// module.exports = router;
