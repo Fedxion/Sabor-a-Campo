@@ -29,7 +29,7 @@ const Product= () =>{
           <img src={Imgc} class="card-img-top" id="burguer" alt="..." />
           <div class="card-body">
             <h5 class="card-title"><b>Pickles</b></h5>
-            <p class="card-text">Pickles mixtos</p>
+            <p class="card-text">Pickles mixtos en vinagre</p>
           </div>
           <div className="card-linkk">
                     

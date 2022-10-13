@@ -3,13 +3,13 @@ import Gallery from "../components/navegation/Gallery";
 import Products from "../components/navegation/Products";
 import "../pages/homepage.css";
 
-const HomePage = () => {
+const Home = () => {
   return (<div>
-    <Gallery />
+      <Gallery />
       <Products />
   </div>
   
   );
 };
 
-export default HomePage;
+export default Home;
