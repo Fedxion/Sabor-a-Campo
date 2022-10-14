@@ -4,8 +4,6 @@ import Login from "./login";
 
 
 
-  
-
   const LoginRegister = () =>{
     const [currentForm, SetCurrentForm] = useState('login');
     const toggleForm = (formName) => {

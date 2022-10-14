@@ -1,9 +1,7 @@
 const LoginService = require("../service/LoginService");
 
-
 module.exports = class LoginController {
-
-  static async login(req, res) {
+  static async save(req, res) {
     try {
       await LoginService.save(req, res);
       res.send();
@@ -11,8 +9,6 @@ module.exports = class LoginController {
       res.status(500).json({ error: error });
     }
   }
-
-
 
   static async update(req, res) {
     try {
@@ -49,4 +45,4 @@ module.exports = class LoginController {
       res.status(500).json({ error: error });
     }
   }
-  };
+};
