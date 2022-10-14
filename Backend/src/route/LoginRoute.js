@@ -2,14 +2,14 @@ const { Router } = require("express");
 const router = Router();
 const LoginController = require("../controller/LoginController");
 
-router.get("/login", LoginController.findAll);
+router.get("/login", LoginController.login);
 
-router.get("/login/:id", LoginController.findOne);
+router.get("/login/:User", LoginController.login);
 
-router.post("/login", LoginController.save);
+router.post("/login", LoginController.login);
 
-router.put("/login/:id", LoginController.update);
+router.put("/login/:User", LoginController.login);
 
-router.delete("/login/:id", LoginController.delete);
+router.delete("/login/:User", LoginController.login);
 
 module.exports = router;
