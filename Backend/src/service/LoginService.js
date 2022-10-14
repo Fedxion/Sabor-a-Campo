@@ -2,14 +2,13 @@
 
 // module.exports = class LoginService {
 //   static async save(req, res) {
-//     const { id, usuario, pasword } = req.body;
+//     const { email, password } = req.body;
 //     try {
 //       const response = await exist(id);
 //       if (!response.exist) {
 //         await User.create({
-//           id,
-//           usuario,
-//           pasword,
+//           email,
+//           password,
 //         });
 //         res.json({ message: "Usuario registrado correctamente" });
 //         res.status(201);
@@ -25,14 +24,12 @@
 //   }
 
 //   static async update(req, res) {
-//     const { usuario, pasword } = req.body;
+//     const { email, password } = req.body;
 //     const id = req.params.id;
 //     try {
 //       await User.updateOne(
-//         { id: `${id}` },
-//         {
-//           usuario,
-//           pasword,
+//         //{
+//           password,
 //         }
 //       );
 //       res.json({ message: "usuario actualizado correctamente" });
@@ -83,7 +80,7 @@
 //   }
 // };
 
-// const exist = async (id) => {
+// const exist async (id) => {
 //   try {
 //     const result = await User.findOne({ id });
 //     if (!result) return { exist: false };
@@ -91,5 +88,4 @@
 //   } catch (err) {
 //     console.error(`Algo salio mal :( : ${err}`);
 //     return { exist: false, error: err };
-//   }
-// };
+//};
