@@ -1,6 +1,78 @@
-require("./dataBase");
-const app = require("./App");
-async function main() {
-  await app.listen(3000, () => console.log("Funcionando"));
-}
-main();
+const express = require ('express');
+const bodyParser = require('body-parser');
+const ejs = require('ejs');
+const mongoose = require('mongoose');
+require ("./database")
+const cors = require ('cors')
+
+
+const app = express();
+
+app.set('view engine', ejs);
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(cors());
+
+// mongoose.connect('mongodb://localhost:27017/userDB', {userNewUrlParser: true});
+
+const userSchema = {
+    email: String,
+    password: String
+};
+
+ const User = new mongoose.model("User", userSchema);
+
+
+app.get('/', function(req, res){
+    res.render("home");
+});
+
+app.get('/login', function(req, res){
+    res.render("login");
+});
+ 
+app.get('/register', function(req, res){
+    res.render("");
+});
+
+app.post("/register", function(req, res){
+    const newUSer = new User({
+        name: req.body.name,
+        lastName: req.body.lastName,
+        email: req.body.username,
+        password: req.body.password
+    });
+
+    newUSer.save(function(err){
+        if (err){
+            console.log((err));
+        }else {
+            res.render("");
+        }
+    });
+}); 
+
+
+app.post("/login", function(req, res){
+    const email = req.body.username;
+    const password = req.body.password;
+
+    User.findOne({email: username}, function(err, foundUser){
+        if (err){
+            console.log(err);
+        }else{
+            if (foundUser){
+                if (foundUser.password === password){
+                     res.render("sucessLogin")
+                }
+
+            }
+        }
+    })
+});
+
+
+app.listen(8000, function(){
+    console.log("server started on port 8000")
+})

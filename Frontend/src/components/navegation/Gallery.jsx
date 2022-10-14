@@ -8,21 +8,21 @@ import Img5 from "../../assets/5.png";
 const Gallery = () => {
     return(
         <div className="div-gallery">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" >
       <img src={Img1} className="d-block w-100" id="photo" alt="..." />
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={Img2} className="d-block w-100"  alt="..." />
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={Img3} className="d-block w-100"  alt="..." />
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={Img4} className="d-block w-100"  alt="..." />
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={Img5} className="d-block w-100"  alt="..." />
     </div>
   </div>
