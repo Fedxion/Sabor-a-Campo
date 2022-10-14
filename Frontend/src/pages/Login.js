@@ -1,5 +1,5 @@
 import React, {  useState } from "react";
-const { saveStudent } = require("../services/apiCall");
+const { saveUser, UserTableData} = require("../services/apiCall");
 
 const HomePage = () => {
   /**
@@ -10,15 +10,14 @@ const HomePage = () => {
   /**
    * Declaración hook de estado usado para almacenar los datos provenietes de la BD para llenar la tabla estudiantes
    */
-  const [studentTableData, setStudentTableData] = useState({ student: [] });
+  const [studentTableData, setUserTableData] = useState({ User: [] });
 
   /**
    * Declaración de hook de estado usado para almacenar los datos de cada input del form
    */
-  const [studentFormData, setStudentFormData] = useState({
-    identification: "",
-    firstname: "",
-    lastname: "",
+  const [UserFormData, setUserFormData] = useState({
+    email: "",
+    password: "",
   });
   /**
    * Hook de efecto usado para buscar los datos de la base de datos y se ejecuta cada vez que la variable de estado "refresh" se actualice
@@ -34,9 +33,9 @@ const HomePage = () => {
    * @param {*} event
    */
   const handleInputChange = (event) => {
-    setStudentFormData({
-      ...studentFormData,
-      [event.target.name]: event.target.value,
+    setUserFormData({
+      ...UserFormData,
+      [event.target.name]: event.target.value, ///// ACA VA . EMAIL?????
     });
   };
 
@@ -46,8 +45,8 @@ const HomePage = () => {
    */
   const handleSubmit = (event) => {
     event.preventDefault();
-    saveStudent(studentFormData.identification, studentFormData.firstname, studentFormData.lastname).then((response) => {
-      
+    saveUser(UserFormData.email, UserFormData.password).then((response) => {
+      //if
     });
   };
 
@@ -61,44 +60,32 @@ const HomePage = () => {
       <div className="container-sm w-30">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <label htmlFor="identification" className="form-label">
-              Identification
+            <label htmlFor="email" className="form-label">
+              Email
             </label>
             <input
               type="text"
-              placeholder="identification"
+              placeholder="email"
               className="form-control"
               onChange={handleInputChange}
-              name="identification"
+              name="email"
             ></input>
           </div>
           <div className="row">
-            <label htmlFor="firstname" className="form-label">
-              Firstname
+            <label htmlFor="password" className="form-label">
+              Password
             </label>
             <input
               type="text"
-              placeholder="firstname"
+              placeholder="password"
               className="form-control"
               onChange={handleInputChange}
-              name="firstname"
-            ></input>
-          </div>
-          <div className="row">
-            <label htmlFor="lastname" className="form-label">
-              Lastname
-            </label>
-            <input
-              type="text"
-              placeholder="lastname"
-              className="form-control"
-              onChange={handleInputChange}
-              name="lastname"
+              name="password"
             ></input>
           </div>
           <div className="d-flex justify-content-center">
             <button type="submit" className="btn btn-dark btn-submit mb-4">
-              Submit
+              ENVIAR
             </button>
           </div>
         </form>
@@ -108,9 +95,8 @@ const HomePage = () => {
         <table class="table table-dark table-striped">
           <thead>
             <tr>
-              <th>Identification</th>
-              <th>Firstname</th>
-              <th>Lastname</th>
+              <th>Email</th>
+              <th>Password</th>
             </tr>
           </thead>
           <tbody>
@@ -118,11 +104,10 @@ const HomePage = () => {
              * La función map se ejecuta sobre la variable de estado que contiene los datos traidos de la base de datos
              * y realizamos un "map" para llenar nuestra tabla por cada elemento dentro del array de estudiantes
              */}
-            {studentTableData.student.map((student) => (
+            {UserTableData.User.map((User) => (
               <tr>
-                <td>{student.identification}</td>
-                <td>{student.firstname}</td>
-                <td>{student.lastname}</td>
+                <td>{User.email}</td>
+                <td>{User.password}</td>
               </tr>
             ))}
           </tbody>
