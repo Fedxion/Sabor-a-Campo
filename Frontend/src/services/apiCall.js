@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const saveStudent = async (email, password) =>{
-    const student={
+export const saveUser = async (email, password) =>{
+    const User={
         email: email,
         password: password
-    }
-    return await axios.get("http://localhost:8000/login", student);
+    };
+    return await axios.get("http://localhost:8000/login", User);
 }
