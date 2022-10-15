@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import './Login.css';
 const {saveUser, UserTableData}= require("../../services/apiCall");
-// import "../login.css";
+
 
 const Login =(props) => {
 
