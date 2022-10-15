@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const url = "mongodb://27.0.17/loginSystem";
+const url = "mongodb://localhost:27017/loginSystem";
 
 mongoose.connect(url, {
   useNewUrlParser: true,
