@@ -1,34 +1,74 @@
 import React, { useState } from "react";
 import './Login.css';
-const {saveUser, UserTableData}= require("../../services/apiCall");
+import Logo from "../../assets/logo.jpeg"
+import {Apiurlogin} from "../../services/apiRest";
+import axios from 'axios';
+// const {saveUser, UserTableData}= require("../../services/apiCall");
 
-
-const Login =(props) => {
-
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
-
+class Login extends React.Component{
+    
+    state={
+        form:{
+            "email": "",
+            "password": ""
+        },
+        error:false,
+        errorMsg:""
     }
-    return ( 
-        <div className="container">
-        <div className="form-container">
-        <h2>Iniciar Sesion</h2>
-            <form className="login-form"onSubmit={handleSubmit}>
-                <label htmlFor="email">Email</label>
-                <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="tucorreo@gmail.com" id="email" name="email " />
-                <label htmlFor="password">Password</label>
-                <input value={pass} onChange={(e)=>setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-                <button type="submit">Iniciar Sesion</button>
-                <p>Olvidaste tu contrasena? </p>
-            </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Eres nuevo? Registrarse Aqui</button>
-        </div>
-        </div>
-    )
+    
+    manejadorSubmit =e=>{
+        e.preventDefault();
+    }
+
+    manejadorChange =async e=>{
+        await this.setState({
+            form:{
+                ...this.state.form,
+                [e.target.name] : e.target.value
+            }
+        })
+       
+    }
+
+    manejadorBoton=()=>{
+        let url = Apiurlogin;
+        axios.post(url,this.state.form)
+        .then(response =>{
+            console.log(response);
+        })
+    }
+    
+    render(){
+        return(
+            <React.Fragment>
+                <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                        
+                        <div className="fadeIn first">
+                            <br /><br />
+                            <img src={Logo} id="icon" alt="User Icon" />
+                        </div>
+
+                       
+                        <form onSubmit={this.manejadorSubmit}> 
+                            <input type="text"  className="fadeIn second" name="email" placeholder="Email" onChange={this.manejadorChange} />
+                            <input type="password"  className="fadeIn third" name="password" placeholder="Contraseña" onChange={this.manejadorChange} />
+                            <input type="submit" className="fadeIn fourth" value="Log In" onClick={this.manejadorBoton}/>
+                        </form>
+
+                        
+                        <div id="formFooter">
+                            <a className="underlineHover" href="#">Olvidaste la contraseña?</a>
+                        </div>
+
+                    </div>
+                </div>    
+            </React.Fragment>
+        )
+    }
 }
+
+
+
 
 export default Login;
